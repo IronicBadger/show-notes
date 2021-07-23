@@ -19,6 +19,7 @@ jobs:
           architecture: 'x64'
       - name: Install dependencies
         run: |
+          pip install -U -r requirements.txt
           python3 scrape.py
 
       # automatically adds changed files in docs directory to git
